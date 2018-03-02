@@ -161,7 +161,6 @@ export default class Header extends Component {
         </div>
         <div className="partner">
           <div className="partner__wrap">
-            <h2>{config.eventInformation.partnerText}</h2>
             <Anchor
               href={config.externalEndpoints.site}
               id="partner"
