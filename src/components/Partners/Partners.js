@@ -38,7 +38,6 @@ export default class Partners extends Component {
           <Heading title={config.titles.partners_section}/>
         </div>
         <div className={cx(`${CN}_general`)}>
-          <p className={cx(`${CN}_general_title`)}>Генеральний</p>
           <div className={cx(`${CN}_general_content`)}>
             <div className={cx(`${CN}_general_content_logo`)}>
               <img
@@ -53,7 +52,7 @@ export default class Partners extends Component {
               </p>
               <div className={cx(`${CN}_general_content_desc_icons`)}>
                 <Anchor
-                  href={config.externalEndpoints.facebook}
+                  href={config.externalEndpoints.facebookGridPage}
                   id="facebook"
                 >
                   <img
