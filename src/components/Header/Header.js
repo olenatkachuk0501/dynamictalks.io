@@ -20,40 +20,60 @@ const INFO = 'event-info';
 
 
 export default class Header extends Component {
-  
+
   static propTypes = {
-    
+
     /**
      * className - classes which can be passed from parent
      */
     className: PropTypes.string,
-    
+
     /**
      * config - configuration object
      */
     config: PropTypes.object.isRequired,
   };
-  
+
   static defaultProps = {};
-  
+
   constructor(props) {
     super(props);
-    
+
     this.state = {
-      isMenuOpen: false
+      isMenuOpen: false,
+      isOnTop: false
     };
-    
+
     this.onMenuClick = this.onMenuClick.bind(this);
-    
+    this.handleScroll = this.handleScroll.bind(this);
+
   }
-  
+
+  componentDidMount() {
+    this.handleScroll();
+    document.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    if (document.documentElement.scrollTop === 0) {
+      this.setState({ isOnTop: true });
+    } else {
+      this.setState({ isOnTop: false });
+    }
+  }
+
+
   renderIcon(path, altText, content) {
     let img = ( <img
       alt={altText}
       src={path}/>);
     return content ? <span> {img} {content}</span> : img;
   }
-  
+
   renderNavLinks() {
     const {config: {headerNavigationLinks}} = this.props;
     return headerNavigationLinks.map((item, i) => {
@@ -68,7 +88,7 @@ export default class Header extends Component {
         </Anchor>);
     });
   }
-  
+
   renderEventInfo() {
     const {config: {eventInformation: einfo}} = this.props;
     return (
@@ -82,7 +102,7 @@ export default class Header extends Component {
       </div>
     );
   }
-  
+
   renderPlayButton() {
     const {config: {buttonsText, externalEndpoints}} = this.props;
     return (
@@ -98,24 +118,24 @@ export default class Header extends Component {
       </div>
     );
   }
-  
+
   onMenuClick() {
     this.setState((prevState) => {
       return {isMenuOpen: !prevState.isMenuOpen};
     });
   }
-  
+
   render() {
     const {className, config} = this.props;
-    const {isMenuOpen} = this.state;
-    
+    const {isMenuOpen, isOnTop} = this.state;
+
     return (
       <section
         className={cx(CN, className)}
         id="header"
-      
+
       >
-        <div className={cx(`${NAV}__wrapper`)}>
+        <div className={cx(`${NAV}__wrapper`, !isOnTop && `${NAV}__wrapper--not-top`, isMenuOpen && `${NAV}__wrapper--menu-opened`)}>
           <div className="container">
             <div className={cx(NAV)}>
               <Anchor
@@ -141,6 +161,7 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
+
         <div className={cx(`${CN}__event-info`)}>
           {this.renderEventInfo()}
           {this.renderPlayButton()}
@@ -148,8 +169,7 @@ export default class Header extends Component {
         <div className="snake">
           {this.renderIcon(snakeIconPath, 'snakeIconPath-picture')}
         </div>
-        <div className={cx({'collapse-menu': isMenuOpen})}>
-          {isMenuOpen &&
+        <div className={cx(isMenuOpen && 'collapse-menu--visible', 'collapse-menu')}>
           <div>
             <nav>{this.renderNavLinks()}</nav>
             <RegistrationButton
@@ -157,7 +177,6 @@ export default class Header extends Component {
               config={config}
             />
           </div>
-          }
         </div>
         <div className="partner">
           <div className="partner__wrap">
