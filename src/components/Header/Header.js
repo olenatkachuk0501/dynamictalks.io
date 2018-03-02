@@ -51,11 +51,11 @@ export default class Header extends Component {
 
   componentDidMount() {
     this.handleScroll();
-    document.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
