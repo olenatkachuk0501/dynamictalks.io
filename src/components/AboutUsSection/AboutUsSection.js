@@ -5,7 +5,7 @@ import './AboutUsSection.scss';
 import {Heading} from 'src/components/Heading';
 import facebook from 'src/images/facebook.png';
 
-import meetUp from 'src/images/meetup.jpg';
+import meetUp from 'src/images/header/bg-foto-meetup_small.jpg';
 
 export default class AboutUsSection extends Component {
 
