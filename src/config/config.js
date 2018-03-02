@@ -12,7 +12,7 @@ export const config = {
 
   titles:{
     speakers_section:'наші спікери',
-    contacts_section:'Dynamic JS Talks #2',
+    contacts_section:'Dynamic JS Talks #3',
     partners_section:'НАШІ ПАРТНЕРИ',
     previous_speakers_section: 'ПОПЕРЕДНІ СПІКЕРИ',
     about_us:'Про нас'
@@ -100,7 +100,7 @@ export const config = {
       topic: 'The story about good and bad decisions on the way to develop new UI platform for enterprise',
       specialGuest: false,
       link: 'https://www.linkedin.com/in/georgiy-podsvetov-86898945/',
-      imageSrc: 'images/speakers/dscf3957_1024.jpg',
+      imageSrc: 'images/speakers/gp.jpg',
       bullets: [
         'Story how our team made impossible within one year',
         'Tough decision',
@@ -127,7 +127,7 @@ export const config = {
       topic: 'Як побудувати бізнес від нуля до мільйона в Україні',
       specialGuest: false,
       link: 'https://www.facebook.com/yaroslav.zablotskyy',
-      imageSrc: 'images/speakers/DDV_8093 copy.jpg',
+      imageSrc: 'images/speakers/yz.jpg',
       bullets: ['Ярослав Заблоцький – д.м.н., професор, керівник приватної Академії, практикуючий лікар. Власник мережі стоматологічних клінік TM “Клініка Заблоцького” – сервісної компанії №1 за версією «DYB Business Club» і KMBS. Власник одного з найдорожчих брендів в Україні у сфері професійних медичних послуг, вивів клініку на рівень франчайзингу та разом з франчайзі реалізував проекти в Одесі та Софії, у Києві та Львові відкрив Центри турботи про зуби – Dental Care Offices, де надається лише одна послуга – професійне чищення зубів.\n' +
       '\n' +
       'Автор книги «Як я став Заблоцьким. Пригоди стоматолога в червоному метелику». Автор та ведучий  медіа-проекту про 100  заможних українців  «Як я став…».'
