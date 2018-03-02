@@ -45,6 +45,7 @@ export default class Header extends Component {
     };
 
     this.onMenuClick = this.onMenuClick.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
 
   }
@@ -52,10 +53,12 @@ export default class Header extends Component {
   componentDidMount() {
     this.handleScroll();
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('touchmove', this.handleScroll);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('touchmove', this.handleScroll);
   }
 
   handleScroll() {
@@ -125,6 +128,10 @@ export default class Header extends Component {
     });
   }
 
+  closeMenu() {
+    this.setState({isMenuOpen: false});
+  }
+
   render() {
     const {className, config} = this.props;
     const {isMenuOpen, isOnTop} = this.state;
@@ -169,7 +176,10 @@ export default class Header extends Component {
         <div className="snake">
           {this.renderIcon(snakeIconPath, 'snakeIconPath-picture')}
         </div>
-        <div className={cx(isMenuOpen && 'collapse-menu--visible', 'collapse-menu')}>
+        <div
+          className={cx(isMenuOpen && 'collapse-menu--visible', 'collapse-menu')}
+          onClick={this.closeMenu}
+        >
           <div>
             <nav>{this.renderNavLinks()}</nav>
             <RegistrationButton
