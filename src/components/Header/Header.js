@@ -53,18 +53,18 @@ export default class Header extends Component {
   componentDidMount() {
     this.handleScroll();
     window.addEventListener('scroll', this.handleScroll);
-    window.addEventListener('touchmove', this.handleScroll);
+    window.addEventListener('touchstart', this.handleScroll);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
-    window.removeEventListener('touchmove', this.handleScroll);
+    window.removeEventListener('touchstart', this.handleScroll);
   }
 
   handleScroll() {
-    if (document.documentElement.scrollTop === 0) {
+    if (window.scrollY === 0 && !this.state.isOnTop) {
       this.setState({ isOnTop: true });
-    } else {
+    } else if (window.scrollY > 0 && this.state.isOnTop) {
       this.setState({ isOnTop: false });
     }
   }
