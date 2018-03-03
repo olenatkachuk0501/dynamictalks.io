@@ -54,11 +54,13 @@ export default class AboutUsSection extends Component {
 
           </div>
 
-          <div className="about_us_photo">
-            <img
-              alt="img"
-              src={meetUp}
-            />
+          <div className="about__photo">
+            <div className="photo-cell">
+              <img
+                alt="img"
+                src={meetUp}
+              />
+            </div>
           </div>
         </div>
 
