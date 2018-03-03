@@ -128,7 +128,7 @@ export const config = {
     {
       name: 'Георгій Подсвєтов',
       state: '',
-      position: 'UI engineer / Grid Dynamics',
+      position: 'Practice director UI technologies/ Grid Dynamics',
       topic: 'The story about good and bad decisions on the way to develop new UI platform for enterprise',
       specialGuest: false,
       link: 'https://www.linkedin.com/in/georgiy-podsvetov-86898945/',
