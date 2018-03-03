@@ -7,7 +7,7 @@ import {Anchor} from 'src/components/Anchor';
 
 
 import facebook from 'src/images/facebook.png';
-import slack from 'src/images/slack.png';
+//import slack from 'src/images/slack.png';
 
 
 
@@ -47,7 +47,7 @@ export default class Speaker extends Component {
         id={socialNetwork.link}
         key={i}
         target="_blank"
-    
+
       >
         <img
           alt={socialNetwork.name}
@@ -74,18 +74,6 @@ export default class Speaker extends Component {
             <img
               alt={socialNetworks.name}
               src={facebook}
-            />
-          </Anchor>
-
-          <Anchor
-            href={socialNetworks[1].link}
-            id={socialNetworks[1].link}
-            key={socialNetworks[1].name}
-            target="_blank"
-          >
-            <img
-              alt={socialNetworks.name}
-              src={slack}
             />
           </Anchor>
 

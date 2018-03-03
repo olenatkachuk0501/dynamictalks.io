@@ -87,8 +87,7 @@ export default class ContactsSection extends Component {
         </div>
 
         <div className='btn-block'>
-          <a className='map_btn'
-             href={externalEndpoints.location}
+          <a className='map_btn' href={externalEndpoints.location}
           >Прокласти маршрут</a>
         </div>
 
