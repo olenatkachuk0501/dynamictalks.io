@@ -6,7 +6,7 @@ import './SocialNetwork.scss';
 import {Anchor} from 'src/components/Anchor';
 
 
-import facebook from 'src/images/facebook.png';
+import facebook from 'src/images/facebook.svg';
 //import slack from 'src/images/slack.png';
 
 

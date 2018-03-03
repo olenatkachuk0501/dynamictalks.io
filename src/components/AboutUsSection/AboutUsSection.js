@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import autoBind from 'react-autobind';
 import './AboutUsSection.scss';
 import {Heading} from 'src/components/Heading';
-import facebook from 'src/images/facebook.png';
+import facebook from 'src/images/facebook.svg';
 
 import meetUp from 'src/images/header/bg-foto-meetup_small.jpg';
 
