@@ -190,11 +190,13 @@
     display: flex;
     opacity: 0;
     flex-direction: column;
-    padding: 40px;
+    padding: 0;
+    overflow: hidden;
 
     &--visible {
       opacity: 1;
       height: calc(100% - #{$navigation-bar-height});
+      padding: 40px;
       transition: opacity .5s;
     }
 
