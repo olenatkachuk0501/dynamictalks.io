@@ -215,7 +215,7 @@ export const config = {
 
 config.agenda = [
   {time: '10:30-11:00', description: 'Реєстрація, нетворкінг'},
-  {time: '11:00-11:15', description: 'Відкриття, декілька слів про ідею івенту'},
+  {time: '11:00-11:15', description: 'Відкриття, декілька слів про новий дизайн'},
   {time: '12:45-14:00', topic: speakerToDescription(config.speakers[2]), speaker: speaker(config.speakers[2])},
   // { time: '11:15-12:30', topic: speakerToDescription(config.speakers[1]), speaker: speaker(config.speakers[1])},
   {time: '12:30-12:45', description: 'Кава'},
