@@ -30,7 +30,7 @@ export const config = {
     },
     {
       name: 'slack',
-      link: 'https://griddynamics.slack.com'
+      link: 'https://dynamictalks.slack.com/'
     },
     {
       name:'twitter',
