@@ -3,8 +3,7 @@
 @import "~src/variables.scss";
 @import "~src/mixins.scss";
 
-
-* , h1 {
+*, h1 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,4 +31,18 @@ body, html {
 @font-face {
   font-family: 'GothamProMedium';
   src: url('../../fonts/GothamProMedium.otf');
+}
+
+.icon {
+  padding: 8px;
+  font-size: $font-size-large;
+  color: $color-gray;
+
+  &:hover {
+    color: black;
+  }
+
+  @include respond-to($tablet-portrait) {
+    font-size: $font-size-x-large;
+  }
 }
