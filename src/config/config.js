@@ -6,24 +6,24 @@ export const config = {
       '2-й поверх\n' +
       '(на розі Площі Ринок)'
     ],
-    googleMapEmbed:'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.076540122793!2d24.029019415632334!3d49.84101933896939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6dca0c9b13%3A0x2797b7e6a216b902!2z0LLRg9C70LjRhtGPINCT0LDQu9C40YbRjNC60LAsIDEsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1520001652497" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'
+    googleMapEmbed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.076540122793!2d24.029019415632334!3d49.84101933896939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6dca0c9b13%3A0x2797b7e6a216b902!2z0LLRg9C70LjRhtGPINCT0LDQu9C40YbRjNC60LAsIDEsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1520001652497" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'
   },
 
 
-  titles:{
-    speakers_section:'наші спікери',
-    contacts_section:'Dynamic JS Talks #3',
-    partners_section:'НАШІ ПАРТНЕРИ',
+  titles: {
+    speakers_section: 'наші спікери',
+    contacts_section: 'Dynamic JS Talks #3',
+    partners_section: 'НАШІ ПАРТНЕРИ',
     previous_speakers_section: 'ПОПЕРЕДНІ СПІКЕРИ',
-    about_us:'Про нас'
+    about_us: 'Про нас'
   },
 
-  iconUrl:{
+  iconUrl: {
     calendar: 'images/icon@2x.png',
-    map:'images/icon copy.png'
+    map: 'images/icon copy.png'
   },
 
-  socialNetworks : [
+  socialNetworks: [
     {
       name: 'facebook',
       link: 'https://www.facebook.com/dynamictalks/'
@@ -33,12 +33,16 @@ export const config = {
       link: 'https://dynamictalks.slack.com/'
     },
     {
-      name:'twitter',
-      link:'https://twitter.com/griddynamics'
+      name: 'twitter',
+      link: 'https://twitter.com/griddynamics'
     },
     {
-      name:'instagram',
-      link:'https://www.instagram.com/griddynamics_ua'
+      name: 'instagram',
+      link: 'https://www.instagram.com/griddynamics_ua'
+    },
+    {
+      name: 'linkedin',
+      link: 'https://www.linkedin.com/company/250774/'
     }
   ],
 
@@ -68,7 +72,7 @@ export const config = {
 
   eventInformation: {
     title: 'Dynamic js talks #3',
-    slogan: 'The frontend conference for experienced developers',
+    slogan: 'The frontend meetup for experienced developers',
     partnerText: 'Генеральний партнер',
     eventDate: {
       city: 'Львів',
@@ -86,17 +90,18 @@ export const config = {
     youtube: 'https://goo.gl/CsBDhE',
     slack: 'https://dynamictalks.slack.com/join/shared_invite/enQtMjU0OTkwNjY0MjYzLTQxZmJkNjk2OTZjNTQ1OTc4N2ExYmQwZDZjYTBlYWUyNzA2NmJjMDc0ZGIxZWQ3OTkyNmZjMDQxN2RmNzA2ODc',
     facebook: 'https://www.facebook.com/dynamictalks/',
-    facebookGridPage:'https://www.facebook.com/griddynamics',
+    facebookGridPage: 'https://www.facebook.com/griddynamics',
     linkedIn: 'https://www.linkedin.com/company/250774/',
-    location:'https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%B0%D0%BB%D0%B8%D1%86%D1%8C%D0%BA%D0%B0,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/@49.8401876,24.0293324,17z/data=!3m1!4b1!4m5!3m4!1s0x473add6c2e097db9:0x777fab7d561f976c!8m2!3d49.8401842!4d24.0315211',
+    location: 'https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%B0%D0%BB%D0%B8%D1%86%D1%8C%D0%BA%D0%B0,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/@49.8401876,24.0293324,17z/data=!3m1!4b1!4m5!3m4!1s0x473add6c2e097db9:0x777fab7d561f976c!8m2!3d49.8401842!4d24.0315211',
     site: 'https://www.griddynamics.com/',
-    promoVideo:'https://www.youtube.com/watch?v=fpVmtc2A3H8&feature=youtu.be'
+    promoVideo: 'https://www.youtube.com/watch?v=fpVmtc2A3H8&feature=youtu.be',
+    instagram: 'https://www.instagram.com/explore/tags/griddynamics_lviv/'
   },
 
   speakers: [
     {
       name: 'Георгій Подсвєтов',
-      state:'',
+      state: '',
       position: 'UI engineer / Grid Dynamics',
       topic: 'The story about good and bad decisions on the way to develop new UI platform for enterprise',
       specialGuest: false,
@@ -110,7 +115,7 @@ export const config = {
     },
     {
       name: 'Володимир Воєвідка',
-      state:'',
+      state: '',
       position: 'UI engineer / Grid Dynamics',
       topic: 'Hidden obstacles of bringing new technology stack to enterprise organization',
       link: 'https://www.linkedin.com/in/vovavoevidka/',
@@ -123,7 +128,7 @@ export const config = {
     },
     {
       name: 'Ярослав Заблоцький',
-      state:'спеціальний гість',
+      state: 'спеціальний гість',
       position: 'Власник мережі стоматологічних клінік TM "Клініка Заблоцького"',
       topic: 'Як побудувати бізнес від нуля до мільйона в Україні',
       specialGuest: false,
@@ -140,30 +145,30 @@ export const config = {
 
     {
       name: 'Любомир Семків',
-      state:'спеціальний гість',
+      state: 'спеціальний гість',
       position: 'Senior software engineer / Intellias',
+      link:'https://www.linkedin.com/in/lyubomyr-semkiv-0627a732/',
       specialGuest: true,
       imageSrc: 'images/speakers/semkiv.jpg',
-      bullets: [
-      ]
+      bullets: []
     },
     {
       name: 'Володимир Воєвідка',
-      state:'',
+      state: '',
       position: 'UI engineer / Grid Dynamics',
+      link:'https://www.linkedin.com/in/vovavoevidka/',
       specialGuest: false,
       imageSrc: 'images/speakers/volodymyr_voyevidka.jpg',
-      bullets: [
-      ]
+      bullets: []
     },
     {
       name: 'Георгій Подсвєтов',
-      state:'',
+      state: '',
       position: 'Practice director UI technologies / Grid Dynamics',
+      link:'https://www.linkedin.com/in/georgiy-podsvetov-86898945/',
       specialGuest: false,
       imageSrc: 'images/speakers/podsvyetov.jpg',
-      bullets: [
-      ]
+      bullets: []
     },
     {
       name: 'Ігор Томов',
@@ -180,7 +185,7 @@ export const config = {
     },
     {
       name: 'Дмитро Вербовий',
-      state:'',
+      state: '',
       position: 'UI engineer / Grid Dynamics',
       topic: 'Key things every front-end developer should know about HTTP/2. Why is it important to migrate?',
       specialGuest: false,
@@ -194,7 +199,7 @@ export const config = {
     },
     {
       name: 'Володимир Фльонц',
-      state:'дебют',
+      state: 'дебют',
       position: 'Розробник ProZorro, засновник ГО «Електронна демократія», IT-євангеліст',
       topic: 'Чи можна електрифікувати демократію?',
       link: 'https://www.linkedin.com/in/flyonts',
@@ -209,14 +214,16 @@ export const config = {
 };
 
 config.agenda = [
-  { time: '10:30-11:00', description: 'Реєстрація, нетворкінг' },
-  { time: '11:00-11:15', description: 'Відкриття, декілька слів про ідею івенту' },
-  { time: '11:15-12:30', topic: speakerToDescription(config.speakers[1]), speaker: speaker(config.speakers[1])},
-  { time: '12:30-12:45', description: 'Кава' },
-  { time: '12:45-14:00', topic: speakerToDescription(config.speakers[2]), speaker: speaker(config.speakers[2]) },
-  { time: '14:00-14:15', description: 'Напої та снеки' },
-  { time: '14:15-15:30', topic: speakerToDescription(config.speakers[0]), speaker: speaker(config.speakers[0]) },
-  { time: '15:30', description: 'Afterparty, Networking' }
+  {time: '10:30-11:00', description: 'Реєстрація, нетворкінг'},
+  {time: '11:00-11:15', description: 'Відкриття, декілька слів про ідею івенту'},
+  {time: '12:45-14:00', topic: speakerToDescription(config.speakers[2]), speaker: speaker(config.speakers[2])},
+  // { time: '11:15-12:30', topic: speakerToDescription(config.speakers[1]), speaker: speaker(config.speakers[1])},
+  {time: '12:30-12:45', description: 'Кава'},
+  {time: '11:15-12:30', topic: speakerToDescription(config.speakers[1]), speaker: speaker(config.speakers[1])},
+  // { time: '12:45-14:00', topic: speakerToDescription(config.speakers[2]), speaker: speaker(config.speakers[2]) },
+  {time: '14:00-14:15', description: 'Напої та снеки'},
+  {time: '14:15-15:30', topic: speakerToDescription(config.speakers[0]), speaker: speaker(config.speakers[0])},
+  {time: '15:30', description: 'Afterparty, Networking'}
 ];
 
 function speakerToDescription(speaker) {

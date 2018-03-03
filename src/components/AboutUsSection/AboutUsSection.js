@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import autoBind from 'react-autobind';
 import './AboutUsSection.scss';
 import cx from 'classnames';
-import { Heading } from 'src/components/Heading';
-import facebook from 'src/images/facebook.png';
 import verticalLine from 'src/images/decor/vertical-line.svg';
 import horizontalLine from 'src/images/decor/horizontal-small-line.svg';
+import {Heading} from 'src/components/Heading';
+import facebook from 'src/images/facebook.svg';
 
 export const CN = 'about';
 import meetUp from 'src/images/header/bg-foto-meetup_small.jpg';

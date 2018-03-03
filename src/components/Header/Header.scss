@@ -115,6 +115,10 @@
         justify-content: space-around;
         margin-bottom: 20px;
 
+        @media screen and (min-width: 320px) and (max-width:400px) {
+          width:100% !important;
+        }
+
         span {
           display: flex;
           align-items: center;
@@ -130,6 +134,7 @@
           }
 
         }
+
 
       }
 
@@ -190,11 +195,13 @@
     display: flex;
     opacity: 0;
     flex-direction: column;
-    padding: 40px;
+    padding: 0;
+    overflow: hidden;
 
     &--visible {
       opacity: 1;
       height: calc(100% - #{$navigation-bar-height});
+      padding: 40px;
       transition: opacity .5s;
     }
 
