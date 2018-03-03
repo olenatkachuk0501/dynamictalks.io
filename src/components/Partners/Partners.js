@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import cx  from 'classnames';
-import { Anchor } from '../Anchor';
-import { Heading } from '../Heading';
+import cx from 'classnames';
+import {Heading} from '../Heading';
 import './Partners.scss';
-import facebook from 'src/images/facebook.png';
-import linkedin from 'src/images/linkedin-1.png';
 import gd from 'src/images/gd-logo.png';
+
+import twitter from 'src/images/twitter.svg';
+import facebook from 'src/images/facebook.svg';
+import linkedin from 'src/images/linkedin-1.svg';
 
 const CN = 'partners';
 
@@ -24,12 +25,13 @@ export default class Partners extends Component {
     config: PropTypes.object.isRequired
   };
 
-  constructor(props){
+  constructor(props) {
     super(props);
   }
+
   render() {
-    const {config,id} = this.props;
-    return(
+    const {config, id} = this.props;
+    return (
       <section
         className={cx(CN)}
         id={id}
@@ -48,36 +50,28 @@ export default class Partners extends Component {
             <div className={cx(`${CN}_general_content_desc`)}>
               <p className={cx(`${CN}_general_content_desc_title`)}>Grid Dynamics</p>
               <p className={cx(`${CN}_general_content_desc_text`)}>
-                Grid Dynamics is the engineering IT services company known for transformative, mission-critical cloud solutions for retail, finance and technology sectors.
+                Grid Dynamics is the engineering IT services company known for transformative, mission-critical cloud
+                solutions for retail, finance and technology sectors.
               </p>
               <div className={cx(`${CN}_general_content_desc_icons`)}>
-                <Anchor
-                  href={config.externalEndpoints.facebookGridPage}
-                  id="facebook"
-                >
+                <a href={config.socialNetworks[4].link}>
                   <img
-                    alt="icon"
-                    src={facebook}
-                  />
-                </Anchor>
-                <Anchor
-                  href={config.externalEndpoints.linkedIn}
-                  id="linkedIn"
-                >
-                  <img
-                    alt="icon"
+                    alt="linkedin"
                     src={linkedin}
                   />
-                </Anchor>
-              </div>
-              <div className={cx(`${CN}_general_content_desc_btn`)}>
-                <Anchor
-                  className={cx(`${CN}_general_content_desc_btn_regbtn`)}
-                  href={config.externalEndpoints.vacanciesUrl}
-                  id="vacancies"
-                >
-                  Відкриті вакансії
-                </Anchor>
+                </a>
+                <a href={config.socialNetworks[2].link}>
+                  <img
+                    alt="twitter"
+                    src={twitter}
+                  />
+                </a>
+                <a href={config.socialNetworks[0].link}>
+                  <img
+                    alt="facebook"
+                    src={facebook}
+                  />
+                </a>
               </div>
             </div>
           </div>
